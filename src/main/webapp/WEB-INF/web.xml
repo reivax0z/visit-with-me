@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+
+<!-- 	<filter> -->
+<!-- 		<filter-name>struts2</filter-name> -->
+<!-- 		<filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter -->
+<!--         </filter-class> -->
+<!-- 	</filter> -->
+ 
+<!-- 	<filter-mapping> -->
+<!-- 		<filter-name>struts2</filter-name> -->
+<!-- 		<url-pattern>/*</url-pattern> -->
+<!-- 	</filter-mapping> -->
+
+<welcome-file-list>
+	<welcome-file>index.jsp</welcome-file>
+</welcome-file-list>
+
+
+<servlet>
+	<servlet-name>rest-services</servlet-name>
+	<servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+	<init-param>
+		<param-name>jersey.config.server.provider.packages</param-name>
+		<param-value>reivax.norac.website.rest</param-value>
+	</init-param>
+	<load-on-startup>1</load-on-startup>
+</servlet>
+<servlet-mapping>
+	<servlet-name>rest-services</servlet-name>
+	<url-pattern>/rest/*</url-pattern>
+</servlet-mapping>
+
+
+<!--   <servlet> -->
+<!--     <servlet-name>CityDetails</servlet-name> -->
+<!--     <servlet-class>reivax.norac.website.service.CityServlet</servlet-class> -->
+<!--   </servlet> -->
+<!--   <servlet-mapping> -->
+<!--     <servlet-name>CityDetails</servlet-name> -->
+<!--     <url-pattern>/CityDetails</url-pattern> -->
+<!--   </servlet-mapping> -->
+<!--   <servlet> -->
+<!--     <servlet-name>Login</servlet-name> -->
+<!--     <servlet-class>reivax.norac.website.service.SigninServlet</servlet-class> -->
+<!--   </servlet> -->
+<!--   <servlet-mapping> -->
+<!--     <servlet-name>Login</servlet-name> -->
+<!--     <url-pattern>/LoginIn</url-pattern> -->
+<!--   </servlet-mapping> -->
+<!--   <servlet> -->
+<!--     <servlet-name>LoginForm</servlet-name> -->
+<!--     <servlet-class>reivax.norac.website.service.LoginForm</servlet-class> -->
+<!--   </servlet> -->
+<!--   <servlet-mapping> -->
+<!--     <servlet-name>LoginForm</servlet-name> -->
+<!--     <url-pattern>/Login</url-pattern> -->
+<!--   </servlet-mapping> -->
+<!--   <servlet> -->
+<!--     <servlet-name>Countries</servlet-name> -->
+<!--     <servlet-class>reivax.norac.website.service.CountriesServlet</servlet-class> -->
+<!--   </servlet> -->
+<!--   <servlet-mapping> -->
+<!--     <servlet-name>Countries</servlet-name> -->
+<!--     <url-pattern>/Home</url-pattern> -->
+<!--   </servlet-mapping> -->
+</web-app>
