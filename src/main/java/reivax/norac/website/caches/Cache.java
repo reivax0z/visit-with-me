@@ -32,7 +32,7 @@ public abstract class Cache<T> {
 	  InitialContext ctx = new InitialContext();
 	  // For local tests: java:global/VisitWebSiteWAR-0.0.1-SNAPSHOT/WebSiteEJB!reivax.norac.website.service.WebSiteEJB
 	  // For Cloudbees: java:global/app/WebSiteEJB!reivax.norac.website.service.WebSiteEJB
-	  return (WebSiteEJB)ctx.lookup("java:global/app/target/VisitWithMe!reivax.norac.website.service.WebSiteEJB");
+	  return (WebSiteEJB)ctx.lookup("java:global/VisitWithMe!reivax.norac.website.service.WebSiteEJB");
 	}
 	
 	protected List<T> elements;
