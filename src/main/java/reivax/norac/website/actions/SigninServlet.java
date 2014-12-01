@@ -18,7 +18,7 @@ import reivax.norac.website.util.CommonsUtils;
 /**
  * Servlet implementation class SigninServlet
  */
-@WebServlet(name="/Login", urlPatterns={"/LoginAction"})
+//@WebServlet(name="/Login", urlPatterns={"/LoginAction"})
 public class SigninServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

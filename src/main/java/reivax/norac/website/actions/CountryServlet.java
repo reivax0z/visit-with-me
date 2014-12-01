@@ -17,7 +17,7 @@ import reivax.norac.website.dto.CountriesVisitedDTO;
 /**
  * Servlet implementation class CountryServlet
  */
-@WebServlet(name="/CountryDetails", urlPatterns={"/CountryDetailsAction"})
+//@WebServlet(name="/CountryDetails", urlPatterns={"/CountryDetailsAction"})
 public class CountryServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

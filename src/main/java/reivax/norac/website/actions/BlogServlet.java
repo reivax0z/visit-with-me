@@ -24,7 +24,7 @@ import reivax.norac.website.utilities.Utils;
 /**
  * Servlet implementation class BlogServlet
  */
-@WebServlet(name="/BlogList", urlPatterns={"/Blog"})
+//@WebServlet(name="/BlogList", urlPatterns={"/Blog"})
 public class BlogServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	

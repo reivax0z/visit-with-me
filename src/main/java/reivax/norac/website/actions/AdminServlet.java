@@ -13,7 +13,7 @@ import reivax.norac.website.util.CommonsUtils;
 /**
  * Servlet implementation class AdminServlet
  */
-@WebServlet(name="/AdminServlet", urlPatterns={"/Admin"})
+//@WebServlet(name="/AdminServlet", urlPatterns={"/Admin"})
 public class AdminServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

@@ -19,7 +19,7 @@ import reivax.norac.website.util.CommonsUtils;
 /**
  * Servlet implementation class AddNewCityForm
  */
-@WebServlet(name="/AddNewCountryForm", urlPatterns={"/AddNewCountryFormAction"})
+//@WebServlet(name="/AddNewCountryForm", urlPatterns={"/AddNewCountryFormAction"})
 public class AddNewCountryForm extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

@@ -15,7 +15,7 @@ import reivax.norac.website.util.CommonsUtils;
 /**
  * Servlet implementation class AboutMeServlet
  */
-@WebServlet(name="/AboutMeServlet", urlPatterns={"/AboutMe", "/About"})
+//@WebServlet(name="/AboutMeServlet", urlPatterns={"/AboutMe", "/About"})
 public class AboutMeServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

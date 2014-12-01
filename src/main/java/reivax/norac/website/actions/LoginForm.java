@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class LoginForm
  */
-@WebServlet(name="/LoginForm", urlPatterns={"/LoginFormAction"})
+//@WebServlet(name="/LoginForm", urlPatterns={"/LoginFormAction"})
 public class LoginForm extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

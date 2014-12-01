@@ -24,7 +24,7 @@ import reivax.norac.website.utilities.Utils;
 /**
  * Servlet implementation class AddArticleServlet
  */
-@WebServlet(name="/AddArticleServlet", urlPatterns={"/AddArticleAction"})
+//@WebServlet(name="/AddArticleServlet", urlPatterns={"/AddArticleAction"})
 public class AddArticleServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

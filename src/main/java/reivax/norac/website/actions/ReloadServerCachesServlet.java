@@ -20,7 +20,7 @@ import reivax.norac.website.util.CommonsUtils;
 /**
  * Servlet implementation class ReloadServerCachesServlet
  */
-@WebServlet(name="/ReloadServerCachesServlet", urlPatterns={"/ReloadServerCachesAction"})
+//@WebServlet(name="/ReloadServerCachesServlet", urlPatterns={"/ReloadServerCachesAction"})
 public class ReloadServerCachesServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

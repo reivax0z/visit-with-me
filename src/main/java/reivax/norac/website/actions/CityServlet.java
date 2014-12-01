@@ -20,7 +20,7 @@ import reivax.norac.website.utilities.FlickrHelper;
 /**
  * Servlet implementation class CityServlet
  */
-@WebServlet(name="/CityDetails", urlPatterns={"/CityDetailsAction"})
+//@WebServlet(name="/CityDetails", urlPatterns={"/CityDetailsAction"})
 public class CityServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

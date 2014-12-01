@@ -20,7 +20,7 @@ import reivax.norac.website.util.CommonsUtils;
 /**
  * Servlet implementation class AddNewArticleForm
  */
-@WebServlet(name="/AddNewArticleForm", urlPatterns={"/AddNewArticleFormAction"})
+//@WebServlet(name="/AddNewArticleForm", urlPatterns={"/AddNewArticleFormAction"})
 public class AddNewArticleForm extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

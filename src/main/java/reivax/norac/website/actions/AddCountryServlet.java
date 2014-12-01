@@ -22,7 +22,7 @@ import reivax.norac.website.util.CommonsUtils;
 /**
  * Servlet implementation class AddCountryServlet
  */
-@WebServlet(name="/AddCountry", urlPatterns={"/AddCountryAction"})
+//@WebServlet(name="/AddCountry", urlPatterns={"/AddCountryAction"})
 public class AddCountryServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	

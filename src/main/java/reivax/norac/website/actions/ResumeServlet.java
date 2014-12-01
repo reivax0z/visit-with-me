@@ -13,7 +13,7 @@ import reivax.norac.website.util.CommonsUtils;
 /**
  * Servlet implementation class ResumeServlet
  */
-@WebServlet(name="/ResumeServlet", urlPatterns={"/Resume", "/Profile"})
+//@WebServlet(name="/ResumeServlet", urlPatterns={"/Resume", "/Profile"})
 public class ResumeServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
