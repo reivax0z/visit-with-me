@@ -133,7 +133,7 @@
 
 	<servlet>
 		<servlet-name>AddNewArticleForm</servlet-name>
-		<servlet-class>reivax.norac.website.actions.AddNewArticleFormServlet</servlet-class>
+		<servlet-class>reivax.norac.website.actions.AddNewArticleForm</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>AddNewArticleForm</servlet-name>
@@ -142,7 +142,7 @@
 
 	<servlet>
 		<servlet-name>AddNewCityForm</servlet-name>
-		<servlet-class>reivax.norac.website.actions.AddNewCityFormServlet</servlet-class>
+		<servlet-class>reivax.norac.website.actions.AddNewCityForm</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>AddNewCityForm</servlet-name>
@@ -151,7 +151,7 @@
 
 	<servlet>
 		<servlet-name>AddNewCountryForm</servlet-name>
-		<servlet-class>reivax.norac.website.actions.AddNewCountryFormServlet</servlet-class>
+		<servlet-class>reivax.norac.website.actions.AddNewCountryForm</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>AddNewCountryForm</servlet-name>
