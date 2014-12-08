@@ -19,24 +19,19 @@ public abstract class Cache<T> {
 	private Date lastSync = null;
 	private String cacheName = "";
 	
-	protected WebSiteEJB webSiteEJB;
+//	@EJB
+	protected WebSiteEJB webSiteEJB = WebSiteEJB.getInstance();
 	
 	public Cache(String name){
 		this.cacheName = name;
-		try {
-			webSiteEJB = getWebSiteEJB();
-		} catch (NamingException e) {
-			e.printStackTrace();
-		}
+//		try {
+//			webSiteEJB = getWebSiteEJB();
+//		} catch (NamingException e) {
+//			e.printStackTrace();
+//		}
 	}
 	
 	private WebSiteEJB getWebSiteEJB() throws NamingException{
-		
-//		Properties properties = new Properties(); 
-//		properties.put("java.naming.factory.initial", "org.apache.naming.java.javaURLContextFactory"); 
-//		properties.put("java.naming.factory.url.pkgs","org.apache.catalina.util.naming"); 
-//		properties.put("java.naming.factory.url.pkgs.prefixes","org.apache.naming" ); 
-//		properties.put("java.naming.provider.url","org.apache.naming ");
 		
 	  InitialContext ctx = new InitialContext();
 	  // For local tests: java:global/VisitWebSiteWAR-0.0.1-SNAPSHOT/WebSiteEJB!reivax.norac.website.service.WebSiteEJB

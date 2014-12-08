@@ -20,12 +20,21 @@ import reivax.norac.website.dto.VideoDTO;
 import reivax.norac.website.model.*;
 import reivax.norac.website.service.WebSiteEJB;
 
-@LocalBean
-@Stateless
+//@LocalBean
+//@Stateless
 public class Converter {
 	
-	@EJB 
-	WebSiteEJB countriesEJB;
+//	@EJB 
+	WebSiteEJB countriesEJB = WebSiteEJB.getInstance();
+	
+	private Converter(){
+	}
+	
+	private static Converter instance = new Converter();
+	
+	public static Converter getInstance(){
+		return instance;
+	}
 	
 	/*
 	 * Entities --> DTO

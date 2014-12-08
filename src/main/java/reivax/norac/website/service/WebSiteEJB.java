@@ -22,17 +22,23 @@ import reivax.norac.website.utilities.HibernateUtil;
 /**
  * Session Bean implementation class WebSiteEJB
  */
-@Stateless
-@LocalBean
-public class WebSiteEJB implements WebSiteEJBRemote, WebSiteEJBLocal, ServicesInterface {
+//@Stateless
+//@LocalBean
+public class WebSiteEJB implements /*WebSiteEJBRemote, WebSiteEJBLocal,*/ ServicesInterface {
 
-	@EJB
-	Converter converter;
+//	@EJB
+	Converter converter = Converter.getInstance();
 
 	/**
 	 * Default constructor. 
 	 */
-	public WebSiteEJB() {
+	private WebSiteEJB() {
+	}
+	
+	private static WebSiteEJB instance = new WebSiteEJB();
+	
+	public static WebSiteEJB getInstance(){
+		return instance;
 	}
 
 	@Override
