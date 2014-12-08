@@ -2,6 +2,7 @@ package reivax.norac.website.caches;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Properties;
 
 import javax.ejb.EJB;
 import javax.ejb.LocalBean;
@@ -30,7 +31,12 @@ public abstract class Cache<T> {
 	}
 	
 	private WebSiteEJB getWebSiteEJB() throws NamingException{
-	  InitialContext ctx = new InitialContext();
+		Properties properties = new Properties(); 
+		properties.put("java.naming.factory.initial","org.jnp.interfaces.NamingContextFactory"); 
+//		properties.put("java.naming.factory.url.pkgs","=org.jboss.namingrg.jnp.interfaces"); 
+		properties.put("java.naming.provider.url","localhost:1099"); 
+		
+	  InitialContext ctx = new InitialContext(properties);
 	  // For local tests: java:global/VisitWebSiteWAR-0.0.1-SNAPSHOT/WebSiteEJB!reivax.norac.website.service.WebSiteEJB
 	  // For Cloudbees: java:global/app/WebSiteEJB!reivax.norac.website.service.WebSiteEJB
 	  // Tried: java:global/app/VisitWithMe!reivax.norac.website.service.WebSiteEJB
