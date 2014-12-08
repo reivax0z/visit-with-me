@@ -34,7 +34,7 @@ public abstract class Cache<T> {
 		
 		Properties properties = new Properties(); 
 		properties.put("java.naming.factory.initial", "org.apache.naming.java.javaURLContextFactory"); 
-		properties.put("java.naming.factory.url.pkgs","org.apache.naming"); 
+		properties.put("java.naming.factory.url.pkgs","org.apache.catalina.util.naming"); 
 		properties.put("java.naming.factory.url.pkgs.prefixes","org.apache.naming" ); 
 		properties.put("java.naming.provider.url","org.apache.naming ");
 		
