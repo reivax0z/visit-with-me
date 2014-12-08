@@ -31,10 +31,12 @@ public abstract class Cache<T> {
 	}
 	
 	private WebSiteEJB getWebSiteEJB() throws NamingException{
+		
 		Properties properties = new Properties(); 
-		properties.put("java.naming.factory.initial","org.jnp.interfaces.NamingContextFactory"); 
-//		properties.put("java.naming.factory.url.pkgs","=org.jboss.namingrg.jnp.interfaces"); 
-		properties.put("java.naming.provider.url","localhost:1099"); 
+		properties.put("java.naming.factory.initial", "org.apache.naming.java.javaURLContextFactory"); 
+		properties.put("java.naming.factory.url.pkgs","org.apache.naming"); 
+		properties.put("java.naming.factory.url.pkgs.prefixes","org.apache.naming" ); 
+		properties.put("java.naming.provider.url","org.apache.naming ");
 		
 	  InitialContext ctx = new InitialContext(properties);
 	  // For local tests: java:global/VisitWebSiteWAR-0.0.1-SNAPSHOT/WebSiteEJB!reivax.norac.website.service.WebSiteEJB
