@@ -22,19 +22,6 @@
 	<!-- <url-pattern>/rest/*</url-pattern> -->
 	<!-- </servlet-mapping> -->
 
-	<resource-env-ref>
-		<description>
-			Mapping for Bean
-		</description>
-		<resource-env-ref-name>
-			bean/WebSiteEJB
-		</resource-env-ref-name>
-		<resource-env-ref-type>
-			reivax.norac.website.service.WebSiteEJB
-		</resource-env-ref-type>
-	</resource-env-ref>
-
-
 	<servlet>
 		<servlet-name>CityDetails</servlet-name>
 		<servlet-class>reivax.norac.website.actions.CityServlet</servlet-class>
@@ -208,4 +195,24 @@
 		<servlet-name>Profile</servlet-name>
 		<url-pattern>/Profile</url-pattern>
 	</servlet-mapping>
+	
+<!-- 	<resource-env-ref> -->
+<!-- 		<description> -->
+<!-- 			Mapping for Bean -->
+<!-- 		</description> -->
+<!-- 		<resource-env-ref-name> -->
+<!-- 			bean/WebSiteEJB -->
+<!-- 		</resource-env-ref-name> -->
+<!-- 		<resource-env-ref-type> -->
+<!-- 			reivax.norac.website.service.WebSiteEJB -->
+<!-- 		</resource-env-ref-type> -->
+<!-- 	</resource-env-ref> -->
+	
+	 <ejb-local-ref>
+      <description>EJB Reference on an OpenEJB bean</description>
+      <ejb-ref-name>ejb/WebSiteEJB</ejb-ref-name>
+      <ejb-ref-type>Session</ejb-ref-type>
+      <local-home>reivax.norac.website.service.WebSiteEJB</local-home>
+  </ejb-local-ref>
+  
 </web-app>
