@@ -205,7 +205,7 @@ String backgroundImg = "http://flagpedia.net/data/flags/normal/"+country.getIso(
 		  <div class="row shadow padding10">
 			  <div class="col-md-9 col-sm-12">
 			    <div class="media">
-				  <div style="background:url(http://xavier.w.caron.free.fr/website/resources/img/<%=country.getName().toLowerCase() %>/<%= c.getName().toLowerCase() %>/cover/cover.JPG) no-repeat 50% 75%;background-size:cover;height:315px"></div>
+				  <div style="background:url('http://xavier.w.caron.free.fr/website/resources/img/<%=country.getName().toLowerCase() %>/<%= c.getName().toLowerCase() %>/cover/cover.JPG') no-repeat 50% 75%;background-size:cover;height:315px"></div>
 			  	</div>
 			  </div>
 			  <div class="col-md-3 col-sm-12">
