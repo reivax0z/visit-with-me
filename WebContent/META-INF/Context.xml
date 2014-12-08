@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/project" reloadable="true">
+  <Resource name="bean/WebSiteEJB" auth="Container"
+            type="reivax.norac.website.service.WebSiteEJB"
+            factory="org.apache.naming.factory.BeanFactory"/>
+</Context>
