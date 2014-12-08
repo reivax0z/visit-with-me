@@ -19,15 +19,18 @@ public abstract class Cache<T> {
 	private Date lastSync = null;
 	private String cacheName = "";
 	
-	protected WebSiteEJB webSiteEJB;
+//	protected WebSiteEJB webSiteEJB;
+	
+	@EJB
+	WebSiteEJB webSiteEJB;
 	
 	public Cache(String name){
 		this.cacheName = name;
-		try {
-			webSiteEJB = getWebSiteEJB();
-		} catch (NamingException e) {
-			e.printStackTrace();
-		}
+//		try {
+//			webSiteEJB = getWebSiteEJB();
+//		} catch (NamingException e) {
+//			e.printStackTrace();
+//		}
 	}
 	
 	private WebSiteEJB getWebSiteEJB() throws NamingException{
