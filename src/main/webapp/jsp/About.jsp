@@ -76,7 +76,7 @@ Boolean isLogged = request.getSession().getAttribute("isLogged") != null ? (Bool
               <h2>About me</h2>
               <p id="about_me_summary"></p>
               <p>You can find my detailed online resume here:
-              <a href="http://au.linkedin.com/in/xavierwilfriddimitrycaron">My Resum&eacute;</a></p>
+              <a href="http://au.linkedin.com/in/xavierwilfriddimitrycaron" target="_blank">My Resum&eacute;</a></p>
               </div>
             </div><!--/span-->
             <div class="col-6 col-sm-12 col-lg-6" style="text-align:justify;">

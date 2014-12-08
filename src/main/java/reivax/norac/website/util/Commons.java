@@ -8,7 +8,7 @@ public interface Commons {
 	public static final String PATH_TOP = "top/";
 	public static final String PATH_COVER = "cover/cover.JPG";
 	public static final String IMG_PROFILE_ADDRESS = SITE_ADDRESS + FTP_PATH_TO_IMG + "/profile/Profile2.jpg";
-	public static final String IMG_ICON_ADDRESS = SITE_ADDRESS + FTP_PATH_TO_IMG + "/icon/travel-tips-app.ico";
+	public static final String IMG_ICON_ADDRESS = SITE_ADDRESS + FTP_PATH_TO_IMG + "/travel-tips/travel-tips-app.ico";
 	public static final String IMG_EXTENSION = ".JPG";
 	
 	public static final String SEPARATOR = "/";
