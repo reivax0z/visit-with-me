@@ -7,6 +7,7 @@ import javax.ejb.EJB;
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 import javax.inject.Inject;
+import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 
@@ -32,7 +33,9 @@ public abstract class Cache<T> {
 	  InitialContext ctx = new InitialContext();
 	  // For local tests: java:global/VisitWebSiteWAR-0.0.1-SNAPSHOT/WebSiteEJB!reivax.norac.website.service.WebSiteEJB
 	  // For Cloudbees: java:global/app/WebSiteEJB!reivax.norac.website.service.WebSiteEJB
-	  return (WebSiteEJB)ctx.lookup("java:global/app/VisitWithMe!reivax.norac.website.service.WebSiteEJB");
+	  // Tried: java:global/app/VisitWithMe!reivax.norac.website.service.WebSiteEJB
+	  Context envCtx = (Context) ctx.lookup("java:comp/env");
+	  return (WebSiteEJB)envCtx.lookup("bean/WebSiteEJB");
 	}
 	
 	protected List<T> elements;
