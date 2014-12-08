@@ -89,7 +89,7 @@ Boolean isLogged = request.getSession().getAttribute("isLogged") != null ? (Bool
               <li>Landscape Photography</li>
               <li>Guitar</li>
               <li>Software Engineering</li>
-              <li>Big Data</li>
+              <li>Internet of Things</li>
               <li>Knowledge Management</li>
               </ul>
             </div>
@@ -106,7 +106,7 @@ Boolean isLogged = request.getSession().getAttribute("isLogged") != null ? (Bool
               <p>The website also uses Maven for compiling and dependencies, the 
               integration is done using Jenkins and the versioning is done via Git.
               The deployment / hosting is on <a href="http://www.heroku.com/">Heroku</a>.</p>
-              <p>The CSS design and responsiveness is based on <a href="http://getbootstrap.com/">Bootstrap</a> framework.
+              <p>The CSS design and responsiveness is based on the Bootstrap framework.
               I've also used the Google Maps API, following a workshop provided by Google 
               in my university as well as the Flickr Rest API and Gravatar API.</p>
               </div>
@@ -114,11 +114,14 @@ Boolean isLogged = request.getSession().getAttribute("isLogged") != null ? (Bool
             <div class="col-6 col-sm-12 col-lg-6" style="text-align:justify;">
               <div class="shadow padding20">
               <h2>Other Projects</h2>
-              <p>I am also currently developing 2 Android apps to help travellers, especially 
-              when they are overseas.</p>
-              <p>Those projects take some time to develop, not necessarily because of 
-              their complexity, but more because of the small amount of time I can 
-              spend on them.</p>
+              <p>I have developed different small projects on my free time, including:</p>
+			  <ul>
+              <li>Address Book - Search, Manage and Compare</li>
+              <li>Interview Preparation - Upload your Questions and Rehearse</li>
+              <li>Public BBQ in Melbourne - Locate them and get Directions</li>
+              <li>Weekend Planner - Top 10 Places: Restaurants, Attractions and Pubs</li>
+              </ul>
+              <p>For more details, please visit my <a href="http://xavier.w.caron.free.fr/" target="_blank">personal webpage</a>.</p>
               </div>
             </div><!--/span-->
           </div><!--/row-->

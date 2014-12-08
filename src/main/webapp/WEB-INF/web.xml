@@ -8,19 +8,19 @@
 	</welcome-file-list>
 
 
-	<!-- <servlet> -->
-	<!-- <servlet-name>rest-services</servlet-name> -->
-	<!-- <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class> -->
-	<!-- <init-param> -->
-	<!-- <param-name>jersey.config.server.provider.packages</param-name> -->
-	<!-- <param-value>reivax.norac.website.rest</param-value> -->
-	<!-- </init-param> -->
-	<!-- <load-on-startup>1</load-on-startup> -->
-	<!-- </servlet> -->
-	<!-- <servlet-mapping> -->
-	<!-- <servlet-name>rest-services</servlet-name> -->
-	<!-- <url-pattern>/rest/*</url-pattern> -->
-	<!-- </servlet-mapping> -->
+	<servlet>
+	<servlet-name>rest-services</servlet-name>
+	<servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+	<init-param>
+	<param-name>jersey.config.server.provider.packages</param-name>
+	<param-value>reivax.norac.website.rest</param-value>
+	</init-param>
+	<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>rest-services</servlet-name>
+	<url-pattern>/rest/*</url-pattern>
+	</servlet-mapping>
 
 	<servlet>
 		<servlet-name>CityDetails</servlet-name>
@@ -182,6 +182,10 @@
 		<servlet-name>ReloadCaches</servlet-name>
 		<url-pattern>/ReloadServerCachesAction</url-pattern>
 	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ReloadCaches</servlet-name>
+		<url-pattern>/Admin</url-pattern>
+	</servlet-mapping>
 
 	<servlet>
 		<servlet-name>Profile</servlet-name>
@@ -196,23 +200,13 @@
 		<url-pattern>/Profile</url-pattern>
 	</servlet-mapping>
 	
-<!-- 	<resource-env-ref> -->
-<!-- 		<description> -->
-<!-- 			Mapping for Bean -->
-<!-- 		</description> -->
-<!-- 		<resource-env-ref-name> -->
-<!-- 			bean/WebSiteEJB -->
-<!-- 		</resource-env-ref-name> -->
-<!-- 		<resource-env-ref-type> -->
-<!-- 			reivax.norac.website.service.WebSiteEJB -->
-<!-- 		</resource-env-ref-type> -->
-<!-- 	</resource-env-ref> -->
+	<servlet>
+		<servlet-name>Rest</servlet-name>
+		<servlet-class>reivax.norac.website.actions.RestServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Rest</servlet-name>
+		<url-pattern>/rest</url-pattern>
+	</servlet-mapping>
 	
-	 <ejb-local-ref>
-      <description>EJB Reference on an OpenEJB bean</description>
-      <ejb-ref-name>ejb/WebSiteEJB</ejb-ref-name>
-      <ejb-ref-type>Session</ejb-ref-type>
-      <local-home>reivax.norac.website.service.WebSiteEJB</local-home>
-  </ejb-local-ref>
-  
 </web-app>

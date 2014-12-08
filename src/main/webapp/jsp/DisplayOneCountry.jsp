@@ -112,7 +112,7 @@ String backgroundImg = "http://flagpedia.net/data/flags/normal/"+country.getIso(
           	<div class="shadow padding20">
             <h2>Info</h2>
               <p><%= country.getInfo() %></p>
-              <p><a class="btn btn-large btn-primary" href="#id_pictures">Check Photos of <%= country.getName() %></a></p>
+              <p><a class="btn btn-large btn-info" href="#id_pictures">Check Photos of <%= country.getName() %></a></p>
             </div>
             </div>
             
@@ -120,7 +120,7 @@ String backgroundImg = "http://flagpedia.net/data/flags/normal/"+country.getIso(
 <!--             <div class="shadow padding20"> -->
 <!--             <h2>Did You Know?</h2> -->
 <%--               <p><%= city.getDidYouKnow() %></p> --%>
-<%--               <p><a class="btn btn-large btn-primary" href="#id_videos">Watch Videos of <%= city.getName() %></a></p> --%>
+<%--               <p><a class="btn btn-large btn-info" href="#id_videos">Watch Videos of <%= city.getName() %></a></p> --%>
 <!--           	</div> -->
 <!--           	</div> -->
           </div>
@@ -205,14 +205,14 @@ String backgroundImg = "http://flagpedia.net/data/flags/normal/"+country.getIso(
 		  <div class="row shadow padding10">
 			  <div class="col-md-9 col-sm-12">
 			    <div class="media">
-				  <img src="http://xavier.w.caron.free.fr/website/resources/img/<%=country.getName().toLowerCase() %>/<%= c.getName().toLowerCase() %>/cover/cover.JPG" width="560" height="315">
+				  <div style="background:url(http://xavier.w.caron.free.fr/website/resources/img/<%=country.getName().toLowerCase() %>/<%= c.getName().toLowerCase() %>/cover/cover.JPG) no-repeat 50% 75%;background-size:cover;height:315px"></div>
 			  	</div>
 			  </div>
 			  <div class="col-md-3 col-sm-12">
 				<div class="media-body">
 					<h3 class="media-heading"><%=c.getName() %></h3>
 					<p><%=c.getInfo() %></p>
-	    			<a class="btn btn-large btn-primary" href="CityDetailsAction?city=<%= c.getName() %>">More Details</a>
+	    			<a class="btn btn-large btn-info" href="CityDetailsAction?city=<%= c.getName() %>">More Details</a>
 				 </div>
 			  </div>
 		  </div>

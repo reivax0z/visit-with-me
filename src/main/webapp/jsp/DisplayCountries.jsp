@@ -95,13 +95,13 @@ Boolean isLogged = request.getSession().getAttribute("isLogged") != null ? (Bool
 			<div class="shadow">
 			  <div style="padding:5px">
 			   <div style="background: url('http://flagpedia.net/data/flags/normal/<%=country.getIso().toLowerCase() %>.png') no-repeat center;
-			                            background-size: cover; height: 150px;">
+			                            background-size: cover; height: 200px;">
 			   </div>
 			  </div> 
 			  <div class="padding10" style="padding-bottom:10px;padding-left:10px;padding-right:10px;">
               <h2><%=country.getName() %></h2>
               <p><%=country.getInfo() %></p>
-              <a class="btn btn-primary" href="CountryDetailsAction?country=<%= country.getName() %>">
+              <a class="btn btn-info" href="CountryDetailsAction?country=<%= country.getName() %>">
               	More Details
               </a>
 	          <hr>
